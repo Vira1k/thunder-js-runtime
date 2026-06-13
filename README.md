@@ -8,14 +8,14 @@ This project executes JavaScript code from a `.js` file and prints the output to
 
 The runtime supports:
 
-- Variables (`let`, `const`)
-- Functions
-- Conditional statements (`if`, `else`)
-- Loops (`for`, `while`)
-- Arithmetic operations
-- Arrays
-- Strings
-- `console.log()`
+* Variables (`let`, `const`)
+* Functions
+* Conditional statements (`if`, `else`)
+* Loops (`for`, `while`)
+* Arithmetic operations
+* Arrays
+* Strings
+* `console.log()`
 
 ## Project Structure
 
