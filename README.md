@@ -1,21 +1,59 @@
 # Thunder JS Runtime
 
-A JavaScript runtime built in Python for **Thunder Hackathon 2.0**.
+A lightweight JavaScript runtime built in **Python** for **Thunder Hackathon 2.0**.
 
 ## Overview
 
 This project executes JavaScript code from a `.js` file and prints the output to the console.
 
-The runtime supports:
+The runtime uses:
 
-* Variables (`let`, `const`)
-* Functions
-* Conditional statements (`if`, `else`)
-* Loops (`for`, `while`)
-* Arithmetic operations
-* Arrays
-* Strings
+* Tokenizer / Lexer
+* Parser (AST-based execution)
+* Tree-walk interpreter
+* Function execution environment
+* Scope handling
+
+## Features Supported
+
+### Variables
+
+* `let`
+* `const`
+* reassignment
+* `+=`
+
+### Data Types
+
+* numbers
+* strings
+* booleans
+
+### Operators
+
+* Arithmetic: `+`, `-`, `*`, `/`, `%`, `**`
+* Comparison: `===`, `!==`, `==`, `!=`, `<`, `>`, `<=`, `>=`
+* Logical: `&&`, `||`
+
+### Control Flow
+
+* `if / else`
+* `while`
+* `for` loops
+
+### Functions
+
+* Function declarations
+* Function calls
+* Parameters
+* `return`
+* Recursion
+
+### Built-in Support
+
 * `console.log()`
+* `Math.floor()`
+* `.length`
 
 ## Project Structure
 
@@ -23,21 +61,22 @@ The runtime supports:
 thunder-js-runtime/
 │── interpreter.py
 │── main.py
-│── README.md
-│── requirements.txt
 │── test.js
+│── README.md
 ```
 
-## How to Run
+## Installation
 
-### 1. Clone Repository
+Clone repository:
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/Vira1k/thunder-js-runtime.git
 cd thunder-js-runtime
 ```
 
-### 2. Run
+## Run
+
+Execute JavaScript file:
 
 ```bash
 python main.py test.js
@@ -63,6 +102,6 @@ if (num % 2 === 0) {
 7 is Odd
 ```
 
-## Hackathon
+## Hackathon Submission
 
-Submission for **Thunder Hackathon 2.0 – Build Your Own JavaScript**
+Built for **Thunder Hackathon 2.0 – Build Your Own JavaScript Runtime**
